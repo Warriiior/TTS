@@ -7,8 +7,6 @@ from flask import render_template
 template_dir = os.path.abspath('./')
 app = Flask(__name__, template_folder=template_dir)
 
-app = Flask(__name__)
-
 @app.route('/', methods=['GET', 'POST'])
 def tts():
     if request.method == 'POST':
