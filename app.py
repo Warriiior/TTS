@@ -4,8 +4,7 @@ import os
 import base64
 from flask import render_template
 
-template_dir = os.path.abspath('./')
-app = Flask(__name__, template_folder=template_dir)
+app = Flask(__name__, template_folder='templates')
 
 @app.route('/', methods=['GET', 'POST'])
 def tts():
